@@ -9,8 +9,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/features", glue = { "com.qa.stepdefinations" }, tags={"@DryRun1"}, plugin = { "pretty",
-		"html:target/cucumber-reports" })
+		"json:target/cucumber-reports/Cucumber.json" },monochrome=true)
 
 public class Runner {
 
+	//"html:target/cucumber-reports"
 }	
